@@ -1,5 +1,5 @@
 //make connection
-var socket = io.connect('http://localhost:8000');
+var socket = io.connect('https://open-text-global.herokuapp.com');
 
 //ui-opration
 
