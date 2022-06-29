@@ -45,7 +45,7 @@ body{
 .bio>p>span{
     color: var(--green);
 }
-.bio>i{
+.bio>a>i{
     font-size: 2rem;
     color: var(--gray-white);
     cursor: pointer;
