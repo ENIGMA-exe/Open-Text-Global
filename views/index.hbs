@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js" integrity="sha512-/xb5+PNOA079FJkngKI2jvID5lyiqdHXaUUcfmzE0X0BdpkgzIWHC59LOG90a2jDcOyRsd1luOr24UCCAG8NNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div class="bio">
+            <h1>Open Text Global</h1>
+            <p>
+                <span>Open Text Global</span> is an open source web chat app 
+                where you can chat freely to any one globally🗺️.
+
+            </p>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        
+        <div class="main">
+            <div class="main-heading">
+                <p id="name">Open Text Global</p>
+                <p>You</p>
+            </div>
+            <div class="chat-box">
+                {{!-- <div class="feedback" id="feedback">is typing....</div> --}}
+
+                {{!-- <div class="chat-sub-box">
+                    <div class="sender-head">
+                        mandeep
+                    </div>
+                    <div class="txt">
+                        hello world...
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, 
+                        assumenda nesciunt dolore facilis nisi voluptatum illum
+                        dignissimos repellendus, totam labore distinctio inventore 
+                        consequuntur, reprehenderit adipisci dolores mollitia tempore
+                         porro quae?
+                    </div>
+                </div>
+
+                <div class="chat-sub-box owner-chat">
+                    <div class="sender-head">
+                        mandeep
+                    </div>
+                    <div class="txt">
+                        hello world...
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, 
+                        assumenda nesciunt dolore facilis nisi voluptatum illum
+                        dignissimos repellendus, totam labore distinctio inventore 
+                        consequuntur, reprehenderit adipisci dolores mollitia tempore
+                         porro quae?
+                    </div>
+                </div> --}}
+
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="ctxt" placeholder="Type here...">
+                <button id="send">Send</button>
+            </div>
+        </div>
+    </body>
+    <script src="chat.js"></script>
+</html>
