@@ -60,7 +60,6 @@ input.addEventListener('keyup',(e)=>{
 
 
 
-
 //listen for event
 socket.on('chat',(data)=>{
 
