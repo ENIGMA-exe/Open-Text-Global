@@ -22,14 +22,14 @@ app.get('/',(req,res)=>{
 })
 
 const server = app.listen(PORT,async (req,res)=>{
-  console.log(`server listen @ ${PORT}`)
+  //console.log(`server listen @ ${PORT}`)
 })
 
 //setup socket.....
 var io = socket(server);
 
 io.on('connection',(socket)=>{
-    console.log("socket connection is working",socket.id)
+    //console.log("socket connection is working",socket.id)
     
     //reciving data from any of the node that connected to this server...
     socket.on('chat',(data)=>{
