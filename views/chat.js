@@ -1,5 +1,10 @@
-//make connection
-var socket = io.connect('https://open-text-global.herokuapp.com');
+//make connection (after deploy check the link and add it, eg.vercel,heroku,aws etc)
+
+const vercel = 'https://open-text-global.vercel.app/'
+const local_host = 'http://localhost:8000/'
+const heroku = 'https://open-text-global.herokuapp.com' // currently not using
+
+var socket = io.connect(vercel);
 
 //ui-opration
 
