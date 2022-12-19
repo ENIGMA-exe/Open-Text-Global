@@ -1,10 +1,11 @@
 //make connection (after deploy check the link and add it, eg.vercel,heroku,aws etc)
 
-const vercel = 'https://open-text-global.vercel.app/'
-const local_host = 'http://localhost:8000/'
-const heroku = 'https://open-text-global.herokuapp.com' // currently not using
+// const vercel = 'https://open-text-global-fx27apkyw-enigma-exe.vercel.app/'
+// const local_host = 'http://localhost:8000/'
+// const heroku = 'https://open-text-global.herokuapp.com' // currently not using
 
-var socket = io.connect(vercel);
+const url = document.URL
+var socket = io.connect(url);
 
 //ui-opration
 
@@ -26,7 +27,7 @@ document.getElementsByClassName('main-heading')[0].children[1].innerText = owner
 var Socket_id;
 socket.on('connect',()=>{
     Socket_id = socket.id
-    console.log(Socket_id)
+    //console.log(Socket_id)
 })
 
 
